@@ -1,0 +1,17 @@
+CComPtr<IIDispatch> spDisp;
+            pBrowser->get_Document(&spDisp);
+            CComQIPtr<IHTMLDocument2, &
+                         IID_IHTMLDocument2> spDocument2(spDisp);
+            //Now recursivley browse through all of
+                        //IHTMLW
+    if(!bFrameFound || !m_bFoungLoginPage)
+    {
+
+        CComPtr<IIHTMLElementCollection> spFrmCol;
+        CComPtr<IIHTMLElementCollection> spElmntCol;
+        /*multipe <FORM> object can be in a page,
+                 connect to each one them
+        You never know which one contains uid and pwd fields
+        */
+        hr = spDocumeol);
+        // get eleme
